@@ -1,0 +1,111 @@
+site_name: Radpoker Explained - A Definitive Guide to Playing Poker on Radpoker
+site_url: https://radpoker.github.io/
+site_description: Radpoker Guide | Learn how to play poker on Radpoker. Get details about Daily Cash Cup, Monthly Cash Cup, and everything else that will make you successful at playing poker on Radpoker and realize your dreams.
+nav:
+  - Getting Started: 'index.md'
+  - Contests:
+    - Daily Cash Cup Contest: daily-cc-contest.md
+    - Monthly Cash Cup Contest: monthly-cc-contest.md
+  - Live Chat on RadPoker: live-chat-on-radpoker.md
+  - Rating Resets: resets.md
+  - Popular Terms on RadPoker: terminology.md
+  - Frequenty Asked Questions: frequenty-asked-questions.md
+  - Daily Cash Cup Winners:
+    - 2024:
+      - January: daily-cc-winners/2024/january.md
+  - Monthly Cash Cup Winners:
+    - 2023:
+      - December: monthly-cc-winners/2023/december.md
+    - 2024:
+      - January: monthly-cc-winners/2024/january.md
+  - Hall Of Fame:
+    - Daily Cash Cup:
+      - 2024:
+        - January: hall-of-fame/daily-cc/2024/january.md
+  # - Player Interviews:
+  #   - player-interviews/index.md
+  - Player Interviews:
+    - blv7183: player-interviews/player/blv7183.md
+    - derbydoc: player-interviews/player/derbydoc.md
+    - jaybujee: player-interviews/player/jaybujee.md
+    - lakeshow: player-interviews/player/lakeshow.md
+    - nastyman: player-interviews/player/nastyman.md
+    - naughtyw: player-interviews/player/naughtyw.md
+    - salpad: player-interviews/player/salpad.md
+    # - Monthly Staking Contest: monthly-staking-contest.md
+extra:
+  analytics:
+    provider: google
+    property: G-C9JGJ2Z0KP
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:salpadradpoker@gmail.com
+      name: Contact Us
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+
+
+theme:
+    name: material
+    icon:
+      logo: material/poker-chip
+      annotation: fontawesome/solid/circle-info
+    favicon: images/poker-chip.svg
+    custom_dir: overrides
+    # static_templates:
+    #   - sitemap.html    
+    include_homepage_in_sidebar: false
+    palette:
+      - media: "(prefers-color-scheme)"
+        toggle:
+          icon: material/link
+          name: Switch to light mode
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        toggle:
+          icon: material/toggle-switch
+          name: Switch to dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        toggle:
+          icon: material/toggle-switch-off
+          name: Switch to system preference
+    font:
+      text: Roboto
+    features:
+      - content.code.copy      
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - def_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - toc:
+      permalink: false
+      # title: On this page
+      # toc_depth : "1-1"
+      separator: "-"
+
+
+plugins:
+  - search # necessary for search to work
+  - social
+  - glightbox
+  - git-revision-date-localized
+#   - blog:
+#       blog_dir: player-interviews
+#       post_dir: "player-interviews/interviews"
+#       post_url_format: "{slug}"
+#       post_excerpt: optional
+#       archive: false

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block announce %}
+  {{ super() }}
+  <p style="color: yellow;">
+    <span class="twemoji">
+      {% include ".icons/octicons/alert-16.svg" %}
+    </span>
+    This is a community driven website. Information provided on this website may not be accurate. It is up to the players to verify the accuracy of the information provided on this website.
+  </p>  
+  <p style="color: yellow;">
+    <span class="twemoji">
+      {% include ".icons/octicons/alert-16.svg" %}
+    </span>
+    This website or the creators of this website are not affiliated with Rad Poker. Please provide any feedback at salpadradpoker@gmail.com
+  </p>
+  <!-- <p style="color: #40C040;">
+    <span class="twemoji">
+      {% include ".icons/material/bell.svg" %}
+    </span>
+     @Derbydoc will be on Hustler Casino Live stream on Monday, Jan 22, 2024 playing Max Pain Monday.
+  </p> -->
+
+  <!-- Add announcement here, including arbitrary HTML -->
+{% endblock %}
